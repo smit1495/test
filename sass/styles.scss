@@ -92,6 +92,8 @@ $bold: 'RobotoBold', sans-serif;
 $thin: 'RobotoThin', sans-serif;
 $fontcolor: #FFF;
 $maincolor: #1e1e1e;
+$hovercolor: #333333;
+$activecolor: #565656;
 
 
 body{
@@ -100,10 +102,7 @@ body{
     font-family: $mainfont;
     
 }
-.splash{
-    
-  
-}
+
 
 /** HEADER **/
     header{
@@ -224,20 +223,17 @@ body{
             
             .asmall{
             text-decoration: inherit;
-            color:  #F0E9C3;
+            color:  $fontcolor;
             display: block;
             padding: 7px 20px 7px 20px;
             font-family: 'Roboto', sans-serif;
-            background-color:#6AA0A0;
+            background-color:$hovercolor;
+            
             }
             
-            .activelink{
-            background-color:#4e7b7b;
-            font-weight: 500;
-            }
             
             .asmall:hover{
-            background-color: #588a8a;
+            background-color: $activecolor;
 
             }
             
@@ -245,7 +241,7 @@ body{
             .dropdownnavclose{
             display: inline;
             position: absolute;
-            top: 113px;
+            top: -20px;
             animation: fadeout 0.5s;
             animation-fill-mode: forwards;
             }
@@ -253,7 +249,7 @@ body{
             .dropdownnavopen{
             display: inline;
             position: absolute;
-            top: 113px;
+            top: -20px;
             animation: fadein 0.5s;
             animation-fill-mode: forwards;
             }
@@ -282,3 +278,11 @@ body{
                     opacity: 1;
                 }
             }
+
+
+/** SPLASH PAGE **/
+.splashid{
+    position: absolute;
+    top: -65px;
+    text-align: center;
+}
