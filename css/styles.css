@@ -4,19 +4,23 @@
   font-size: 0;
   content: " ";
   clear: both;
-  height: 0;
-}
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
+  height: 0; }
 
+.clearfix {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* close commented backslash hack */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,40 +30,190 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+  display: block; }
+
 body {
-	line-height: 1;
-}
+  line-height: 1; }
+
 ol, ul {
-	list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-	quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  content: '';
+  content: none; }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 /** NEW CSS **/
+/** FONTS **/
+@font-face {
+  font-family: Kitten;
+  src: url(../font/KittenFatTrial.ttf); }
+
+@font-face {
+  font-family: Roboto;
+  src: url(../font/Roboto-Regular.ttf); }
+
+@font-face {
+  font-family: RobotoThin;
+  src: url(../font/Roboto-Thin.ttf); }
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(../font/Roboto-Bold.ttf); }
+
+/** SASS **/
+body {
+  background-color: #1e1e1e;
+  color: #FFF;
+  font-family: "Roboto", sans-serif; }
+
+/** HEADER **/
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+
+main {
+  padding-top: 110px; }
+
+/** NAME **/
+.namelogo {
+  background-color: #1e1e1e;
+  text-align: center;
+  height: 120px; }
+
+.bigscreen {
+  height: 60px;
+  padding: 10px; }
+
+.smallscreen {
+  display: none;
+  height: 73px;
+  padding: 5px;
+  margin: 0 auto; }
+
+.getridofthisstyle {
+  text-decoration: none; }
+
+/** NAVIGATION **/
+.topnav {
+  background-color: #1e1e1e;
+  height: 30px;
+  width: 960px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 90px; }
+
+.abig {
+  text-decoration: inherit;
+  color: #FFFFFF;
+  display: block;
+  float: left;
+  padding: 7px 20px 7px 20px;
+  font-family: 'Roboto', sans-serif; }
+
+.abig:hover {
+  background-color: #474747; }
+
+.activelink {
+  background-color: #474747;
+  font-weight: 500; }
+
+/** DROP DOWN MENU BEFORE MOBILE **/
+.navicon {
+  display: none; }
+
+.dropdownnav {
+  display: none; }
+
+.dropdownnavclose {
+  display: none; }
+
+.dropdownnavopen {
+  display: none; }
+
+/** MOBILE NAVIGATION **/
+@media only screen and (max-width: 762px) {
+  /** LOGO REPLACEMENT  & READY FOR MOBILE **/
+  .bigscreen {
+    display: none;
+    position: absolute; }
+  .smallscreen {
+    display: block; }
+  .abig {
+    display: none;
+    position: absolute; }
+  /** HAMBURGER ICON **/
+  .navicon {
+    display: inline;
+    height: 50px;
+    padding: 0 3px 0 3px;
+    position: absolute;
+    top: -75px;
+    display: inline; }
+  /** TEXT DECORATION **/
+  .asmall {
+    text-decoration: inherit;
+    color: #F0E9C3;
+    display: block;
+    padding: 7px 20px 7px 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #6AA0A0; }
+  .activelink {
+    background-color: #4e7b7b;
+    font-weight: 500; }
+  .asmall:hover {
+    background-color: #588a8a; }
+  /** ONCLICK FOR JS **/
+  .dropdownnavclose {
+    display: inline;
+    position: absolute;
+    top: 113px;
+    animation: fadeout 0.5s;
+    animation-fill-mode: forwards; }
+  .dropdownnavopen {
+    display: inline;
+    position: absolute;
+    top: 113px;
+    animation: fadein 0.5s;
+    animation-fill-mode: forwards; } }
+
+/** ANIMATION FOR NAVIGATION MENU **/
+@keyframes fadeout {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 1; }
+  100% {
+    transform: translate(-170px, 0px);
+    opacity: 0; } }
+
+@keyframes fadein {
+  0% {
+    transform: translate(-170px, 0px);
+    opacity: 0; }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1; } }
