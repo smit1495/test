@@ -62,7 +62,7 @@ table {
 }
 
 
-/** NEW CSS **/
+/************************************* NEW CSS *************************************/
 
 
 /** FONTS **/
@@ -92,8 +92,12 @@ $bold: 'RobotoBold', sans-serif;
 $thin: 'RobotoThin', sans-serif;
 $fontcolor: #FFF;
 $maincolor: #1e1e1e;
+$testcolor: #CC5235;
 $hovercolor: #333333;
 $activecolor: #565656;
+$inbetween: #000000;
+$mobilewidth: 750px;
+
 
 
 body{
@@ -115,7 +119,7 @@ body{
     }
     /** NAME **/
         .namelogo{
-            background-color: #1e1e1e;
+            background-color: $maincolor;
             text-align: center;
             height: 120px;
            
@@ -280,9 +284,176 @@ body{
             }
 
 
+/** MAIN **/
+main{
+    margin: 0 auto;
+    width: $mobilewidth;
+}
+.titletext{
+    font-size: 30px;
+    font-family: $bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.subtext{
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.text{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.textcontainer{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    
+}
+
+/* SLIDERS */
+.slidercontainer{
+    position: relative;
+    width: $mobilewidth;
+    margin: 30px 0 30px 0;
+}
+.slider{
+    width: 410px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.singleslider{
+    margin: 80px 0 100px 0;
+}
+
+.sliderpics{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+.buttonleft{
+    width: 50px;
+    position: absolute;
+    margin: 180px 0 0 40px;
+    
+}
+
+.buttonright{
+    width: 50px;
+    position: absolute;
+    margin: 180px 0 50px 0;
+    left: 650px;
+}
+
+
+/** IN BETWEEN PAGES **/
+.inbetweenbig{
+    padding: 55px 0 55px 0;
+    width: 100%;
+}
+.inbetween{
+    background-color: $inbetween;
+    padding: 5px;
+    width: 100%;
+}
+
 /** SPLASH PAGE **/
 .splashid{
     position: absolute;
-    top: -65px;
+    top: 0px;
+}
+
+.profilepicturehalf{
+    width: 400px;
+    margin-left: 300px;
+}
+
+.clever{
+    position: absolute;
+    top: 300px;
+    left: 200px;
+}
+
+/** ABOUT ME **/
+
+.gunspic{
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+
+/** WEB DEVELOPMENT **/
+
+/** GRAPHIC DESIGN **/
+
+/** PHOTOGRAPHY **/
+
+/** VIDEOGRAPHY **/
+.video{
+    margin: 0 auto;
+}
+.video-player-container{
+    margin: 0 auto;
+    display: block;
+}
+.videoplayer{
+    display: block;
+    margin: 0 auto;
+}
+
+.video-controls{
+    margin: 0 auto;
+    width: 254px;
+}
+.video-control{
+    background-color: $maincolor;
+    margin: 10px;
+}
+         
+.video-play-list{
+    width: 500px;
+    margin: 0 auto;
+    height: 310px;
+}
+.video-list{
+    margin: 0 auto;
+    width: 465px;
+}
+
+.video-list-item{
+    float: left;
+    margin: 5px;
+}
+/** UX DESIGN **/
+.pdfcontainer{
+    margin: 0 auto;
+    width: 700px;
+}
+.uxdesignfinalpdf{
+    width: 700px;
+    margin: 10px 0 40px 0;
+    
+}
+
+/** FOOTER **/
+footer{
+    position:fixed;
+    bottom:0px;
+    height:22px;
+    background-color: $maincolor;
+    width:100%;
+}
+.footertext{
     text-align: center;
+    margin: 3px;
 }

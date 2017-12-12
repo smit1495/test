@@ -19,13 +19,13 @@
            </div></a>
        <!-- NAVIGATION -->
         <div class="topnav">
-            <a class="abig activelink" >Home</a>
-            <a class="abig" href="about.html">About</a>
-            <a class="abig" href="webdev.html">Web Development</a>
-            <a class="abig" href="graphic.html">Graphic Design</a>
-            <a class="abig" href="photo.html">Photography</a>
-            <a class="abig" href="video.html">Videography</a>
-            <a class="abig" href="uxdesign.html">User Experience Design</a>
+            <a class="abig" href="#splash" >Home</a>
+            <a class="abig" href="#about">About</a>
+            <a class="abig" href="#coding">Web Development</a>
+            <a class="abig" href="#graphic">Graphic Design</a>
+            <a class="abig" href="#photography">Photography</a>
+            <a class="abig" href="#video">Videography</a>
+            <a class="abig" href="#uxdesign">User Experience Design</a>
             
             
             <img class="navicon" id="navicon" src="img/hamburger.png" onclick="toggleMenu()">
@@ -45,59 +45,183 @@
     
     <main>
        <!-- SPLASH PAGE -->
-       <div class="splashid" id="splash">Hello</div>
+       <div class="splashid" id="splash"></div>
        
         <div  class="splash">
             <div class="profilebox">
         <img class="profilepicturehalf" src="img/Profilepicture%20-%20half.png">
-        
-        
-        <p class="h1hometext">Something clever.</p>
-       
+
         
         </div>
-            <p> Some pic of me ya ya what eva</p>
+            <p class="titletext clever">Something clever.</p>
         </div>
         
         <!-- ABOUT ME -->
-        <div id="aboutme" class="aboutme">
-            <p> some shit about me with a pic underneith </p>
+        <div class="inbetweenbig" id="aboutme">
+            <div class="inbetween"></div>
+        </div>
+        <div class="aboutme">
+           <div class="textcontainer">
+            <p class="titletext"> “Work harder, get smarter.” </p>
+            <p class="text">
+                Hi, I’m Lana. <br>
+                I am a student at Algonquin College. I have
+                completed one year of Interactive Media
+                Design. I have always had a passion for
+                Photography, Videography and Graphic
+                Design. During my studies, I found out, I
+                also love Web Development!<br><br>
+                My other hobbies include playing music,
+                cooking, going on adventures, spending
+                time with loved ones and hanging out with
+                my cat.<br><br>
+                I am constantly working on new projects
+                and will always be changing and updating
+                my portfolio, so feel free to check back in.<br><br>
+                Thank you for checking out my portfolio!
+            </p>
+            <img class="gunspic" src="img/guns.jpg">
+            <p class="text">
+               Email: lanasmith.koi@gmail.com<br>
+                Contact me to see my resume. 
+            </p>
+            
+            </div>
+            
         </div>
         
         <!-- WEB DEVELOPMENT -->
-        <div id="coding" class="coding">
-            <p> some pics with links to shit i've made </p>            
+        <div class="inbetweenbig" id="coding">
+            <div class="inbetween"></div>
+        </div>
+        
+        <div class="coding">
+            <p class="titletext">HTML, CSS & JavaScript Projects</p>  
+            
+            <div class="slidercontainer singleslider">
+            <img class="buttonleft" id="codebuttonleft" src="img/leftbutton.png">
+            <img class="buttonright" id="codebuttonright" src="img/rightbutton.png"> 
+        <div class="slider" id="codeslider">
+         <a href="http://www.facebook.com" id="codepicslink"> 
+          <img class="sliderpics"  id="codepics" src="img/webdev/contactcard.png"> 
+          </a>
+           </div>
+                 
+            </div>
+                            
         </div>
         
         <!-- GRAPHIC DESIGN -->
-        <div id="graphic" class="graphic">
-            <p>two sliders that are clickable of my work</p>
-            </div>
-            <img id="illbuttonleft" src="img/leftbutton.png">
-        <div id="illslider" class="illslider"> <img id="illpics" src="img/graphic/ill/animalicon01.png"> </div>
-            <img id="illbuttonright" src="img/rightbutton.png">
-       
+        <div id="graphic" class="inbetweenbig">
+            <div class="inbetween"></div>
+        </div>
         
+        <div class="graphic">
+            <p class="titletext">Graphic Design</p>
+            
+            
+            
+        <div class="slidercontainer"> 
+           <p class="subtext">Illustrator</p>
+            <img id="illbuttonleft" class="buttonleft" src="img/leftbutton.png">
+            <img id="illbuttonright" class="buttonright" src="img/rightbutton.png">
+            <div id="illslider" class="slider"> 
+            <img id="illpics" class="sliderpics" src="img/graphic/ill/animalicon01.png"> 
+            </div>
+        </div>   
+        
+        
+        <div class="slidercontainer phoslider"> 
+           <p class="subtext">Photoshop</p>
+            <img id="phobuttonleft" class="buttonleft" src="img/leftbutton.png">
+            <img id="phobuttonright" class="buttonright" src="img/rightbutton.png">
+            <div id="phoslider" class="slider"> 
+            <img id="phopics" class="sliderpics" src="img/graphic/pho/oldphoto.png"> 
+            </div>
+        </div>                                                                                                   
+        </div>
         <!-- PHOTOGRAPHY -->
-        <div id="photography" class="photography">
-            <p>slider with options on the bottom</p>
+        <div class="inbetweenbig" id="photography">
+            <div class="inbetween"></div>
+        </div>
+        
+        <div class="photography">
+            <p class="titletext">Photography</p>
+            
+        <div class="slidercontainer singleslider"> 
+            <img id="photobuttonleft" class="buttonleft" src="img/leftbutton.png">
+            <img id="photobuttonright" class="buttonright" src="img/rightbutton.png">
+            <div id="photoslider" class="slider"> 
+            <img id="photopics" class="sliderpics" src="img/graphic/pho/oldphoto.png"> 
+            </div>
+        </div>
+            
         </div>
         
         <!-- VIDEOGRAPHY -->
-        <div id="video" class="video">
-            <p>video player</p>
+        <div class="inbetweenbig" id="video">
+            <div class="inbetween"></div>
+        </div>
+        
+        <div class="video">
+            <p class="titletext">Videography</p>
+            
+            <div class="video-player-container">
+            
+            <video class="videoplayer"  id="video-player" name="media" height="300"  
+              poster="img/video/sebsburkery.jpg">
+            <source id="mp4-source" src="video/sebsburkery.mp4" type="video/mp4">
+            <source id="webm-source" src="video/sebsburkery.webm" type="video/webm">
+            </video>
+            
+
+            <div class="video-controls">
+            <button class="video-control" id="play-video">
+            <img id="playicon" class="playbutton" src="img/video/playbutton.png">
+            </button>
+            <button class="video-control" id="play-sound">
+            <img id="muteicon" class="mutebutton" src="img/video/unmutedbutton.png">
+            </button>
+            </div>
+
+            </div>
+            
+            <div class="video-play-list">
+              <ul class="video-list">
+                <li class="video-list-item_" data-src="sebsburkery"><img class="video-list-item" data-src="sebsburkery" src="img/video/sebsburkery.png"></li>
+                <li class="video-list-item_" data-src="facepaint"><img class="video-list-item" data-src="facepaint" src="img/video/facepaint.png"></li>
+                <li class="video-list-item_" data-src="justastroll"><img class="video-list-item" data-src="justastroll" src="img/video/justastroll.png"></li>
+                <li class="video-list-item_" data-src="manonthestreet"><img class="video-list-item" data-src="manonthestreet" src="img/video/manonthestreet.png"></li>
+                <li class="video-list-item_" data-src="sunday"><img class="video-list-item" data-src="sunday" src="img/video/sunday.png"></li>
+                <li class="video-list-item_" data-src="videostory"><img class="video-list-item" data-src="videostory" src="img/video/videostory.png"></li>
+              </ul>
+            </div>
+            
         </div>
         
         <!-- UX DESIGN -->
-        <div id="usdesign" class="uxdesign">
-            <p>ux design pdf</p>
+        <div class="inbetweenbig" id="usdesign">
+            <div class="inbetween"></div>
+            </div>
+            
+            <div class="uxdesign">
+            <p class="titletext">User Experience Design Projects</p>
+            <p class="subtext textcontainer"><br>
+            Here is my final presentation of the UX Design Procsess I followed to create a website I designed for a project called IMD Zone. <br>
+            </p>
+           <div class="pdfcontainer">
+           <embed class="uxdesignfinalpdf" src="uxdesignfiles/IMD%20Zone.pdf" width="800px" height="500px" />
+           </div>
+            
+        
+            
         </div>
         
         
     </main>
     
     <footer>
-        Lana Smith 2017
+        <p class="subtext">Lana Smith 2017 ©</p>
     </footer>
     
 </body>
