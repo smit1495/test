@@ -216,9 +216,9 @@ main {
     opacity: 1; } }
 
 /** MAIN **/
-main {
-  margin: 0 auto;
-  width: 750px; }
+.mobilew {
+  width: 750px;
+  margin: 0 auto; }
 
 .titletext {
   font-size: 30px;
@@ -294,7 +294,9 @@ main {
 .clever {
   position: absolute;
   top: 300px;
-  left: 200px; }
+  left: 200px;
+  font-family: "RobotoBold", sans-serif;
+  font-size: 30px; }
 
 /** ABOUT ME **/
 .gunspic {
@@ -360,3 +362,21 @@ footer {
 .footertext {
   text-align: center;
   margin: 3px; }
+
+/** DESKTOP **/
+@media only screen and (min-width: 762px) {
+  .profilebox {
+    margin: 0 auto;
+    width: 800px; }
+  .profilepicturehalf {
+    margin-left: 400px;
+    position: relative; }
+  .clever {
+    position: relative;
+    font-size: 60px;
+    top: -600px;
+    left: 0px; }
+  .inbetweenbig {
+    width: 100%; }
+  main {
+    margin: 0 auto; } }

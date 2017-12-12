@@ -48,10 +48,10 @@ var codepics=[
 
 var codepicslink={
     
-    "contactcard.png": "http://www.facebook.com",
-    "gallery.png": "http://www.google.com",
-    "likebutton.png": "http://www.twitter.com",
-    "tvisbroken.png": "http://www.instagram.com"
+    "contactcard.png": "#code",
+    "gallery.png": "#code",
+    "likebutton.png": "#code",
+    "tvisbroken.png": "#code"
     
     
     
@@ -61,9 +61,18 @@ var codepicslink={
 
 var photopics=[
     
-    "oldphoto.png",
-    "SpacePoster(1).png",
-    "tutorial12(!).png"
+    "pic02-big.png",
+    "pic03-big.png",
+    "pic04-big.png",
+    "pic15-big.png",
+    "pic26-big.png",
+    "pic33-big.png",
+    "pic35-big.png",
+    "pic36-big.png",
+    "pic40-big.png",
+    "pic41-big.png",
+    "pic45-big.png",
+    "pic50-big.png"
     
 ]
     
@@ -130,7 +139,7 @@ function main(){
         photopics.unshift(tempimage)
         
         var image=photopics[0]
-        document.getElementById("photopics").src="img/graphic/pho/" + image
+        document.getElementById("photopics").src="img/photography/" + image
     }
     
     document.getElementById("photobuttonright").onclick=function(){
@@ -138,7 +147,7 @@ function main(){
         photopics.push(tempimage)
         
         var image=photopics[0]
-        document.getElementById("photopics").src="img/graphic/pho/" + image
+        document.getElementById("photopics").src="img/photography/" + image
     }
     
     
